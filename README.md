@@ -83,7 +83,7 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
 
   ### Case study
 
-  我们实现case study主要用real oral cancer pathology imaging data from the Erlotinib Prevention of Oral Cancer (EPOC) trial at the University of Texas MD Anderson Cancer Center, which comprises a cohort of 136 patients with corresponding histology slides. All imaging data include marked spatial cell pattern data, where each cell consists of multiple pixels.  Here, we demonstrate BLADE 用一张被提前预处理好的sample iamge的数据获取的distance
+  For our case study, we utilized real oral cancer pathology imaging data from the **Erlotinib Prevention of Oral Cancer (EPOC)** trial conducted at the **University of Texas MD Anderson Cancer Center**. This dataset includes a cohort of 136 patients along with their corresponding histology slides. All imaging data are annotated with spatial cell pattern information, where each cell is represented by multiple pixels. Here, we demonstrate the **BLADE** approach using a sample image that has been preprocessed in advance to extract distance measurements.
 
   ```R
   library(dplyr)
@@ -256,4 +256,4 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
       ggtitle("BLADE")
   ```
 
-   <img src="/Users/vanessafeng/Downloads/UTD/oral_cancer/OPMD_EPOC/data_result/sigma_15_alpha_n/label_001_part_1_patch_2.png" alt="label_001_part_1_patch_2" style="zoom:20%;" /><img src="/Users/vanessafeng/Downloads/UTD/oral_cancer/OPMD_EPOC/data_result/sigma_15_alpha_n/vp_001_part_1_patch_2.png" style="zoom:20%;" />
+  <img src="results\epoc_pathology_image_output\label_001_part_1_patch_2.png" alt="label_001_part_1_patch_2" style="zoom:20%;" /><img src="results\epoc_pathology_image_output\vp_001_part_1_patch_2.png" alt="vp_001_part_1_patch_2" style="zoom:20%;" />
