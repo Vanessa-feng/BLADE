@@ -1,0 +1,129 @@
+file.ID,case,gender,age,Prior.oral.cancer.v2..1.yes..0.no.,Concurrent.oral.cancer.v2..1.yes..0.no.,Leukoplakia.group.v2..1.Leukoplakia..0.Other.,overall_surv,overall_time,PFS_surv,PFS_time,PFI_surv,PFI_time,First.group,HistBaselineR3,cancer,time,LOH_Eligible..1.LOH..2.no.LOH.,TP53.mut_status,median_numlayer_output
+EPOC premalignant trial-imaging AI study-001-1,001-1,F,58.1,1,0,1,0,14.77,1,4.2,1,4.2,,mild/moderate dysplasia,1,50.36550308,1,mut,14.5
+EPOC premalignant trial-imaging AI study-003-1,003-1,M,59.4,1,0,1,0,13.59,1,3.12,1,3.12,,mild/moderate dysplasia,1,37.48665298,1,,10.5
+EPOC premalignant trial-imaging AI study-004,004,M,56.6,0,0,1,0,9.47,0,9.47,0,0.58,,mild/moderate dysplasia,0,41.29774127,0,wt,15
+EPOC premalignant trial-imaging AI study-006-1,006-1,F,36.7,0,0,1,1,7.95,1,2.47,1,2.47,X,mild/moderate dysplasia,1,29.66735113,1,mut,15
+EPOC premalignant trial-imaging AI study-007,007,F,54.4,0,0,1,0,10.28,0,10.28,0,7.2,X,mild/moderate dysplasia,0,75.10472279,1,wt,18
+EPOC premalignant trial-imaging AI study-008,008,F,48.5,0,0,1,1,12.02,1,8.24,1,8.24,,mild/moderate dysplasia,1,98.92402464,1,wt,16.5
+EPOC premalignant trial-imaging AI study-009,009,M,51.5,0,0,1,0,14.38,1,8.21,1,8.21,,mild/moderate dysplasia,1,98.56262834,1,wt,17
+EPOC premalignant trial-imaging AI study-010,010,F,62.8,0,0,1,0,0.56,0,0.56,0,0.56,,mild/moderate dysplasia,0,6.702258727,0,wt,20.5
+EPOC premalignant trial-imaging AI study-011,011,M,63.7,0,0,1,0,0.25,0,0.25,0,0.25,X,mild/moderate dysplasia,0,68.56673511,1,wt,10.5
+EPOC premalignant trial-imaging AI study-011-1,011-1,F,49.5,0,0,1,0,13.74,1,3,1,3,X,mild/moderate dysplasia,1,36.00821355,1,wt,20.5
+EPOC premalignant trial-imaging AI study-012-1,012-1,F,58.2,1,0,1,0,13.39,1,2.32,1,2.32,,severe dysplasia/Carcinoma,1,22.76796715,1,wt,16
+EPOC premalignant trial-imaging AI study-015,015,F,61.8,0,0,1,0,12.4,0,12.4,0,6.73,X,mild/moderate dysplasia,0,114.9568789,0,mut,12.5
+EPOC premalignant trial-imaging AI study-016,016,M,31.4,0,0,1,0,13.98,0,13.98,0,13.98,X,mild/moderate dysplasia,0,125.7002053,1,wt,17.5
+EPOC premalignant trial-imaging AI study-016-1,016-1,F,47.9,1,0,1,0,13.43,1,1.68,1,1.68,,mild/moderate dysplasia,1,20.1724846,1,wt,11
+EPOC premalignant trial-imaging AI study-017-1,017-1,M,28.9,0,0,1,0,12.37,1,0.38,1,0.38,X,mild/moderate dysplasia,1,4.501026694,1,wt,19
+EPOC premalignant trial-imaging AI study-018,018,F,67.4,0,0,1,0,14.07,1,12.98,1,12.98,,hyperkeratosis and hyperplasia,0,123.0718686,0,wt,18
+EPOC premalignant trial-imaging AI study-018-1,018-1,M,61.7,1,0,1,1,5.38,1,0.12,1,0.12,,mild/moderate dysplasia,1,1.412731006,1,mut,17.5
+EPOC premalignant trial-imaging AI study-019,019,F,52.1,0,0,1,0,13.36,0,13.36,0,13.36,X,mild/moderate dysplasia,0,118.2094456,0,mut,17
+EPOC premalignant trial-imaging AI study-020,020,M,64.4,0,0,1,1,9.69,1,9.69,0,3.37,,mild/moderate dysplasia,1,116.3039014,1,wt,17
+EPOC premalignant trial-imaging AI study-020-1,020-1,F,35.9,0,0,1,0,12.11,1,3.36,1,3.36,X,mild/moderate dysplasia,1,40.27926078,1,wt,15.5
+EPOC premalignant trial-imaging AI study-021,021,M,66.2,0,0,1,0,0.47,0,0.47,0,0.47,,mild/moderate dysplasia,0,5.683778234,1,mut,13
+EPOC premalignant trial-imaging AI study-022-1,022-1,F,68.8,0,0,1,0,7.78,1,2,1,2,X,mild/moderate dysplasia,1,23.9835729,1,mut,17.5
+EPOC premalignant trial-imaging AI study-024,024,F,61.6,0,0,1,0,6.69,0,6.69,0,6.69,X,mild/moderate dysplasia,0,80.22997947,1,wt,15
+EPOC premalignant trial-imaging AI study-025,025,M,62.4,0,0,1,0,11.35,0,11.35,0,2.24,X,mild/moderate dysplasia,0,73.00205339,0,wt,13
+EPOC premalignant trial-imaging AI study-027,027,F,76.9,0,0,1,0,8.84,0,8.84,0,5.19,,hyperkeratosis and hyperplasia,0,106.0205339,1,wt,9
+EPOC premalignant trial-imaging AI study-031,031,F,52.8,1,0,1,0,11.06,0,11.06,0,10.79,X,mild/moderate dysplasia,0,83.08829569,1,mut,11.5
+EPOC premalignant trial-imaging AI study-033,033,M,47.2,0,0,1,0,4.85,0,4.85,0,4.85,,severe dysplasia/Carcinoma,0,58.18480493,0,wt,21
+EPOC premalignant trial-imaging AI study-034,034,M,61.1,0,0,1,0,11.71,0,11.71,0,11.71,,hyperkeratosis and hyperplasia,0,97.01848049,1,wt,11
+EPOC premalignant trial-imaging AI study-034-1,034-1,F,67.2,0,0,1,0,13.42,0,13.42,0,13.42,X,mild/moderate dysplasia,0,103.7207392,0,wt,12
+EPOC premalignant trial-imaging AI study-035,035,F,35.6,0,0,1,0,4.41,1,4.41,1,4.41,,mild/moderate dysplasia,1,52.862423,1,mut,11
+EPOC premalignant trial-imaging AI study-036,036,M,59.6,0,0,1,0,9.72,0,9.72,0,9.37,,hyperkeratosis and hyperplasia,0,57.92197125,1,mut,13
+EPOC premalignant trial-imaging AI study-037,037,M,48.7,0,0,1,0,0.18,0,0.18,0,0.18,,hyperkeratosis and hyperplasia,0,1.77412731,0,wt,7
+EPOC premalignant trial-imaging AI study-041,041,M,59.6,0,0,1,0,6.75,0,6.75,0,0.29,,mild/moderate dysplasia,0,3.482546201,1,wt,13
+EPOC premalignant trial-imaging AI study-042,042,M,63.2,0,0,1,0,10.61,0,10.61,0,0.28,X,mild/moderate dysplasia,0,81.77412731,0,wt,13
+EPOC premalignant trial-imaging AI study-043,043,F,49.1,0,0,1,0,10.05,0,10.05,0,10.05,X,mild/moderate dysplasia,0,71.91786448,1,,12.5
+EPOC premalignant trial-imaging AI study-044,044,M,60.7,0,0,1,0,2.58,0,2.58,0,1.31,X,mild/moderate dysplasia,0,75.10472279,1,mut,13.5
+EPOC premalignant trial-imaging AI study-045,045,F,56.9,0,0,1,0,9.57,0,9.57,0,8.89,X,mild/moderate dysplasia,0,74.34907598,1,mut,14
+EPOC premalignant trial-imaging AI study-046,046,F,57.6,0,0,1,0,0.9,0,0.9,0,0.9,,hyperkeratosis and hyperplasia,0,81.87268994,0,wt,13.5
+EPOC premalignant trial-imaging AI study-047,047,M,62.8,0,0,1,0,9.04,0,9.04,0,9.04,X,mild/moderate dysplasia,0,69.19096509,1,wt,9.5
+EPOC premalignant trial-imaging AI study-048,048,F,24.6,0,0,1,0,9.36,1,2.28,1,2.28,X,mild/moderate dysplasia,1,27.30184805,1,wt,17
+EPOC premalignant trial-imaging AI study-050,050,M,70.6,0,0,1,1,10.89,1,0.67,1,0.67,,mild/moderate dysplasia,1,128,1,wt,12
+EPOC premalignant trial-imaging AI study-057,057,F,69.7,1,0,1,0,12.63,0,12.63,0,12.17,,hyperkeratosis and hyperplasia,0,120.8049281,1,wt,15
+EPOC premalignant trial-imaging AI study-065,065,F,38.7,1,0,1,0,3.3,0,3.3,0,3.3,,mild/moderate dysplasia,0,75.69609856,1,wt,19
+EPOC premalignant trial-imaging AI study-075,075,M,75.6,1,0,1,1,9.13,1,9.13,0,9.05,,mild/moderate dysplasia,1,109.5030801,1,wt,8
+EPOC premalignant trial-imaging AI study-081,081,F,40.3,1,0,1,0,2.59,0,0.91,0,0.91,,mild/moderate dysplasia,1,30.71868583,0,wt,15
+EPOC premalignant trial-imaging AI study-102,102,F,47.5,1,0,1,0,11.48,1,7.78,1,7.78,,mild/moderate dysplasia,0,73.82340862,1,mut,12
+EPOC premalignant trial-imaging AI study-107,107,F,57.4,1,0,1,0,11.12,1,9.26,1,9.26,,mild/moderate dysplasia,0,83.4825462,1,wt,20
+EPOC premalignant trial-imaging AI study-128,128,M,51.5,0,0,1,0,12.19,0,12.19,0,8.33,,hyperkeratosis and hyperplasia,0,100.0082136,1,,16
+EPOC premalignant trial-imaging AI study-130,130,M,55.8,0,0,1,0,2.14,0,2.14,0,2.14,,hyperkeratosis and hyperplasia,0,25.69199179,0,wt,12
+EPOC premalignant trial-imaging AI study-131,131,M,58.3,1,0,1,0,10.86,0,10.86,0,7.57,,hyperkeratosis and hyperplasia,0,113.2813142,1,wt,13
+EPOC premalignant trial-imaging AI study-132,132,M,61.2,1,0,1,0,10,0,10,0,3.01,,hyperkeratosis and hyperplasia,0,119.9507187,0,wt,17
+EPOC premalignant trial-imaging AI study-136,136,F,72.4,1,0,1,1,5.7,1,5.7,0,1.19,,hyperkeratosis and hyperplasia,0,68.23819302,0,mut,13
+EPOC premalignant trial-imaging AI study-137,137,M,66.1,1,0,1,0,7.89,0,7.89,0,1.59,,mild/moderate dysplasia,0,71.58932238,0,mut,13
+EPOC premalignant trial-imaging AI study-138,138,M,68.8,1,0,1,0,7.39,0,7.39,0,5.59,,mild/moderate dysplasia,0,36.73100616,0,,12
+EPOC premalignant trial-imaging AI study-142,142,M,50.5,0,0,1,1,0.26,1,0.26,0,0.14,,mild/moderate dysplasia,1,3.088295688,0,wt,22
+EPOC premalignant trial-imaging AI study-0001,0001,F,51.1,1,1,0,1,2.89,1,0.92,1,0.92,,mild/moderate dysplasia,1,23.4907598,1,wt,11
+EPOC premalignant trial-imaging AI study-0001-1,0001-1,F,50.1,0,1,0,0,14.82,1,2.4,1,2.4,X,mild/moderate dysplasia,1,28.8459959,1,,13.5
+EPOC premalignant trial-imaging AI study-001,001,F,43.2,0,1,0,0,13.49,1,5.92,1,5.92,,hyperkeratosis and hyperplasia,1,71.0965092,0,wt,15
+EPOC premalignant trial-imaging AI study-002,002,M,66,1,1,0,0,12.72,1,11.53,1,11.53,,hyperkeratosis and hyperplasia,0,102.045175,0,wt,12.5
+EPOC premalignant trial-imaging AI study-005,005,M,72.5,1,1,0,1,5.77,1,4.66,1,4.66,,hyperkeratosis and hyperplasia,1,69.1909651,1,wt,15
+EPOC premalignant trial-imaging AI study-005-1,005-1,M,56.3,1,1,0,0,9.66,1,2.7,1,2.7,,mild/moderate dysplasia,1,123.367557,1,wt,17
+EPOC premalignant trial-imaging AI study-006,006,M,54.7,1,1,0,0,10.56,0,10.56,0,10.56,,mild/moderate dysplasia,0,81.2156058,0,wt,15
+EPOC premalignant trial-imaging AI study-007-1,007-1,M,70.3,1,1,0,1,2.89,1,2.89,0,2.55,,mild/moderate dysplasia,1,34.6283368,1,wt,20
+EPOC premalignant trial-imaging AI study-009-1,009-1,M,55.5,1,1,0,1,3.05,1,3.05,0,2.97,,mild/moderate dysplasia,1,36.6324435,1,wt,18
+EPOC premalignant trial-imaging AI study-012,012,M,40.6,0,0,0,0,0.03,0,0.03,0,0.03,,hyperkeratosis and hyperplasia,0,101.552361,0,wt,17.5
+EPOC premalignant trial-imaging AI study-014,014,F,44.5,0,0,0,0,10.12,0,10.12,0,9.71,X,mild/moderate dysplasia,0,73.7577002,1,wt,14.5
+EPOC premalignant trial-imaging AI study-017,017,F,49,0,0,0,0,7.95,0,7.95,0,4.13,,hyperkeratosis and hyperplasia,0,95.37577,0,wt,18.5
+EPOC premalignant trial-imaging AI study-019-1,019-1,F,47.7,1,1,0,1,3.7,1,2.95,1,2.95,,mild/moderate dysplasia,1,35.3839836,1,mut,18.5
+EPOC premalignant trial-imaging AI study-021-1,021-1,M,58.1,1,1,0,1,6.15,1,2.83,1,2.83,,severe dysplasia/Carcinoma,1,33.9055442,1,wt,20
+EPOC premalignant trial-imaging AI study-022,022,M,61.5,0,0,0,0,4.67,0,4.67,0,4.67,X,mild/moderate dysplasia,0,82.7597536,1,mut,15
+EPOC premalignant trial-imaging AI study-025-1,025-1,F,35.7,1,1,0,0,6.28,1,0.74,1,0.74,,severe dysplasia/Carcinoma,1,8.87063655,1,mut,19
+EPOC premalignant trial-imaging AI study-026,026,F,59.6,0,1,0,0,8.56,0,8.56,0,1.59,,hyperkeratosis and hyperplasia,0,102.735113,1,wt,14
+EPOC premalignant trial-imaging AI study-030,030,M,62.7,0,1,0,0,10.11,0,10.11,0,2.32,,mild/moderate dysplasia,0,27.8275154,1,wt,18
+EPOC premalignant trial-imaging AI study-031-1,031-1,M,52.9,0,1,0,1,1.38,1,0.91,1,0.91,,hyperkeratosis and hyperplasia,1,10.973306,0,wt,14
+EPOC premalignant trial-imaging AI study-032-1,032-1,F,54.7,0,1,0,0,9.13,1,2.53,1,2.53,,mild/moderate dysplasia,1,10.4147844,1,mut,13.5
+EPOC premalignant trial-imaging AI study-036-1,036-1,M,44.6,0,1,0,0,11.03,0,11.03,0,11.03,,mild/moderate dysplasia,0,129.379877,0,wt,13
+EPOC premalignant trial-imaging AI study-054,054,F,81.2,0,1,0,1,9.9,1,9.9,0,2.9,,mild/moderate dysplasia,1,118.833676,1,mut,13
+EPOC premalignant trial-imaging AI study-056,056,F,47.8,0,1,0,0,14.16,0,14.16,0,3.89,,mild/moderate dysplasia,0,125.765914,1,wt,10
+EPOC premalignant trial-imaging AI study-060,060,M,54.4,0,1,0,0,4.86,0,4.86,0,4.86,,mild/moderate dysplasia,0,58.2833676,1,,14
+EPOC premalignant trial-imaging AI study-061,061,M,52.2,0,1,0,1,0.86,1,0.48,1,0.48,,mild/moderate dysplasia,1,5.71663244,0,wt,14
+EPOC premalignant trial-imaging AI study-063,063,M,57.4,0,1,0,0,14.73,0,14.73,0,14.73,,hyperkeratosis and hyperplasia,0,128.755647,0,wt,14.5
+EPOC premalignant trial-imaging AI study-067,067,M,45.4,0,1,0,0,13.32,0,13.32,0,5.3,,mild/moderate dysplasia,0,134.308008,1,mut,11.5
+EPOC premalignant trial-imaging AI study-069,069,F,46.7,0,1,0,0,12.68,0,12.68,0,7.21,,mild/moderate dysplasia,0,118.110883,0,wt,12
+EPOC premalignant trial-imaging AI study-070,070,F,31.1,0,1,0,0,1.4,0,1.4,0,1.4,,mild/moderate dysplasia,0,16.788501,1,mut,13
+EPOC premalignant trial-imaging AI study-071,071,F,65.5,0,1,0,1,8.01,1,8.01,0,1.38,,hyperkeratosis and hyperplasia,1,96.1314168,1,wt,17
+EPOC premalignant trial-imaging AI study-072,072,F,58.1,0,1,0,1,10.76,1,8.06,1,8.06,,hyperkeratosis and hyperplasia,1,96.8542095,0,wt,10
+EPOC premalignant trial-imaging AI study-073,073,M,75.1,0,1,0,1,1.96,1,1.51,1,1.51,,mild/moderate dysplasia,1,18.1683778,0,mut,10
+EPOC premalignant trial-imaging AI study-074,074,M,82.5,0,1,0,0,13.4,0,13.4,0,13.4,,hyperkeratosis and hyperplasia,0,115.219713,0,wt,15.5
+EPOC premalignant trial-imaging AI study-076,076,M,46.7,1,1,0,0,10.88,1,8.88,1,8.88,,mild/moderate dysplasia,1,106.513347,1,wt,17
+EPOC premalignant trial-imaging AI study-077,077,F,40,0,1,0,0,3.29,0,3.29,0,3.29,,hyperkeratosis and hyperplasia,0,91.7946612,0,wt,11
+EPOC premalignant trial-imaging AI study-080,080,M,63.4,0,1,0,0,12.3,0,12.3,0,7.2,,hyperkeratosis and hyperplasia,0,117.256674,1,wt,11.5
+EPOC premalignant trial-imaging AI study-083,083,M,49.7,0,1,0,0,13.17,0,13.17,0,10.28,,hyperkeratosis and hyperplasia,0,110.587269,1,wt,8.5
+EPOC premalignant trial-imaging AI study-084,084,F,50.9,0,1,0,0,12.55,0,12.55,0,12.55,,severe dysplasia/Carcinoma,0,116.303901,1,wt,11.5
+EPOC premalignant trial-imaging AI study-086,086,M,49.5,0,1,0,0,10.91,0,10.91,0,10.91,,hyperkeratosis and hyperplasia,0,106.710472,0,wt,10
+EPOC premalignant trial-imaging AI study-088,088,M,52.9,0,1,0,0,12.52,0,12.52,0,12.52,,hyperkeratosis and hyperplasia,0,96.0985626,0,wt,6.5
+EPOC premalignant trial-imaging AI study-090,090,F,59.2,0,1,0,1,6.75,1,6.75,0,1.26,,hyperkeratosis and hyperplasia,1,80.9527721,1,mut,11
+EPOC premalignant trial-imaging AI study-092,092,F,42.1,0,1,0,0,9.66,1,7.94,1,7.94,,mild/moderate dysplasia,1,95.2772074,1,mut,14.5
+EPOC premalignant trial-imaging AI study-093,093,F,52.9,0,1,0,0,12.85,0,12.85,0,12.85,,mild/moderate dysplasia,0,107.564682,1,mut,13
+EPOC premalignant trial-imaging AI study-095,095,M,56.4,1,0,0,0,7.94,0,7.94,0,1.16,,mild/moderate dysplasia,0,95.2443532,1,wt,17.5
+EPOC premalignant trial-imaging AI study-096,096,F,57.5,0,1,0,0,12.65,1,10.71,1,10.71,,mild/moderate dysplasia,0,105.560575,0,wt,9.5
+EPOC premalignant trial-imaging AI study-097,097,F,51.7,0,1,0,0,13.02,0,13.02,0,11.78,,hyperkeratosis and hyperplasia,0,109.667351,1,wt,13
+EPOC premalignant trial-imaging AI study-098,098,F,33.6,0,1,0,0,11.44,0,11.44,0,4.01,,hyperkeratosis and hyperplasia,0,83.7453799,0,wt,8.5
+EPOC premalignant trial-imaging AI study-100,100,M,52.3,1,0,0,0,8.5,0,8.5,0,4.43,,hyperkeratosis and hyperplasia,0,85.1581109,1,mut,8
+EPOC premalignant trial-imaging AI study-103,103,F,55.3,1,1,0,0,11.89,1,1.39,1,1.39,,hyperkeratosis and hyperplasia,1,16.6570842,1,mut,14
+EPOC premalignant trial-imaging AI study-104,104,M,61.2,1,1,0,0,4.67,0,4.67,0,4.67,,hyperkeratosis and hyperplasia,0,91.4004107,0,wt,9
+EPOC premalignant trial-imaging AI study-105,105,M,74,1,1,0,1,7.95,1,7.95,0,7.22,,severe dysplasia/Carcinoma,0,84.7310062,1,mut,16
+EPOC premalignant trial-imaging AI study-106,106,M,54.2,0,1,0,0,9.68,0,9.68,0,6.03,,mild/moderate dysplasia,0,72.3449692,1,mut,13
+EPOC premalignant trial-imaging AI study-108,108,M,68.5,0,1,0,0,8.3,0,8.3,0,5.77,,mild/moderate dysplasia,0,81.9383984,1,wt,13
+EPOC premalignant trial-imaging AI study-110,110,F,40.9,0,1,0,0,10.11,0,10.11,0,5.85,,hyperkeratosis and hyperplasia,0,70.6036961,1,wt,12
+EPOC premalignant trial-imaging AI study-111,111,F,67.9,1,1,0,0,11.07,0,11.07,0,8.37,,mild/moderate dysplasia,0,76.5174538,1,mut,10
+EPOC premalignant trial-imaging AI study-114,114,F,69.1,0,1,0,0,10.82,0,10.82,0,9.64,,hyperkeratosis and hyperplasia,0,88.5420945,1,wt,14
+EPOC premalignant trial-imaging AI study-115,115,F,38.1,0,1,0,0,9.45,0,9.45,0,6.07,,hyperkeratosis and hyperplasia,0,72.8377823,1,mut,9
+EPOC premalignant trial-imaging AI study-116,116,F,49.2,0,1,0,0,11.11,0,11.11,0,11.1,,hyperkeratosis and hyperplasia,0,90.1848049,1,wt,10
+EPOC premalignant trial-imaging AI study-117,117,F,45,1,0,0,0,3.16,1,2.74,1,2.74,,mild/moderate dysplasia,1,32.8870637,0,mut,20
+EPOC premalignant trial-imaging AI study-118,118,M,64.4,1,1,0,1,6.99,1,5.28,1,5.28,,severe dysplasia/Carcinoma,1,63.37577,1,wt,19
+EPOC premalignant trial-imaging AI study-119,119,M,50.4,0,1,0,0,9.59,0,9.59,0,9.59,,mild/moderate dysplasia,0,78.5215606,1,wt,8
+EPOC premalignant trial-imaging AI study-120,120,M,65.5,0,1,0,0,6.56,0,6.56,0,6.56,,mild/moderate dysplasia,0,78.75154,1,wt,14.5
+EPOC premalignant trial-imaging AI study-121,121,F,48.1,0,1,0,0,8.47,1,0.66,1,0.66,,hyperkeratosis and hyperplasia,1,7.95071869,1,wt,14
+EPOC premalignant trial-imaging AI study-122,122,M,60,0,1,0,1,7.27,1,5.93,1,5.93,,hyperkeratosis and hyperplasia,1,71.1950719,1,wt,17
+EPOC premalignant trial-imaging AI study-123,123,M,54.1,0,1,0,0,7.83,0,7.83,0,7.83,,mild/moderate dysplasia,0,56.0492813,1,wt,16
+EPOC premalignant trial-imaging AI study-124,124,F,63.2,1,0,0,0,10.43,1,3.45,1,3.45,,mild/moderate dysplasia,1,41.3963039,1,mut,18.5
+EPOC premalignant trial-imaging AI study-125,125,M,48.2,0,1,0,0,11.64,1,2.97,1,2.97,,severe dysplasia/Carcinoma,1,35.5811088,0,wt,20.5
+EPOC premalignant trial-imaging AI study-126,126,F,55.5,0,1,0,0,9.41,0,9.41,0,8.69,,hyperkeratosis and hyperplasia,0,68.073922,0,wt,16
+EPOC premalignant trial-imaging AI study-127,127,M,50.8,0,1,0,0,9.02,1,3.32,1,3.32,,hyperkeratosis and hyperplasia,1,39.8193019,0,,9
+EPOC premalignant trial-imaging AI study-133,133,M,43.3,0,1,0,0,13.3,0,13.3,0,5.31,,mild/moderate dysplasia,0,124.616016,0,mut,14.5
+EPOC premalignant trial-imaging AI study-134,134,M,32.9,0,1,0,0,11,0,11,0,11,,mild/moderate dysplasia,0,73.100616,0,wt,12
+EPOC premalignant trial-imaging AI study-135,135,M,65.7,0,1,0,0,7.61,0,7.61,0,3.72,,hyperkeratosis and hyperplasia,0,80.3285421,0,wt,13
+EPOC premalignant trial-imaging AI study-139,139,M,72.8,0,1,0,1,6.66,1,3.32,1,3.32,,hyperkeratosis and hyperplasia,1,39.8521561,1,wt,14.5
