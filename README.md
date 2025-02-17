@@ -217,4 +217,4 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
       ggtitle("BLADE")
   ```
   
-  <img src="results\epoc_pathology_image_output\label_001_part_1_patch_2.png" alt="label_001_part_1_patch_2" style="zoom:20%;" /><img src="results\epoc_pathology_image_output\vp_001_part_1_patch_2.png" alt="vp_001_part_1_patch_2" style="zoom:20%;" />
+  <img src="results\epoc_pathology_image_output\blade_001_part_1_patch_2.png" alt="label_001_part_1_patch_2" style="zoom:20%;" /><img src="results\epoc_pathology_image_output\colorcoded_001_part_1_patch_2.png" alt="colorcoded_001_part_1_patch_2" style="zoom:20%;" />
