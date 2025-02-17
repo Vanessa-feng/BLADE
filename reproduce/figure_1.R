@@ -62,7 +62,7 @@ for(i in 1:num_cell){
 p_blade <- plot.label(label=as.factor(components$label), loc=components[,c("x","y")],
                       boundary=ref_points[ref_points$boundary_id==R,], width=width, height=height,
                       color_palette=my_colors)
-ggsave(filename=paste0(paste0(getwd(), "/results/epoc_pathology_image_output/blade_", file , "png")), p_blade,
+ggsave(filename=paste0(getwd(), "/results/epoc_pathology_image_output/blade_", file , ".png"), p_blade,
        width=2200, height=1500, units = "px")
 
 # ------------------------------------------------------------------------------
@@ -103,6 +103,6 @@ p_colorcoded <- ggplot() +
                    y = mean_dij, yend = mean_dij, color = factor(res)),
                linewidth = 1.5)
 
-ggsave(filename=paste0(paste0(getwd(), "/results/epoc_pathology_image_output/colorcoded_", file , "png")), p_colorcoded,
+ggsave(filename=paste0(getwd(), "/results/epoc_pathology_image_output/colorcoded_", file , ".png"), p_colorcoded,
        width=2200, height=1500, units = "px")
 
