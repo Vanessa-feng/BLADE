@@ -47,6 +47,39 @@ plot.label <- function(label, loc, boundary, main = "", width, height, color_pal
           legend.position="bottom")+
     xlim(0, width) + ylim(0, height)
 }
+
+# plot precision
+plot.preci <- function(label, loc, boundary, main = "") {
+  
+  data <- data.frame(expr = label, x = loc[, 1], y = loc[, 2])
+  data1 <- data.frame(bx = boundary[, 1], by = boundary[, 2])
+  
+  ggplot() +
+    geom_point(data = data, mapping = aes(x = x, y = y, color = expr), size = 1) +
+    geom_point(data = data1, mapping = aes(x = bx, y = by), color = "black", size = 1) +
+    scale_color_gradient(
+      low = "LightSkyBlue", high = "black", limits = c(0, 1),
+      breaks = seq(0, 1, by = 0.2), 
+      labels = seq(0, 1, by = 0.2)  
+    ) +
+    coord_fixed(ratio = 1) +
+    theme_classic() +
+    labs(color = "", title = main) +
+    guides(color = guide_colorbar(barwidth = 1, barheight = 8)) +  # Adjust bar dimensions
+    theme(
+      axis.line = element_blank(),
+      axis.text.x = element_blank(),
+      axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      axis.title.x = element_blank(),
+      axis.title.y = element_blank(),
+      plot.title = element_text(hjust = 0.5, face = "bold", size = 20),
+      panel.border = element_blank(),
+      legend.text = element_text(face = "bold", size = 12),
+      legend.position = "right"
+    )
+}
+
 # ------------------------------------------------------------------------------
 # Simulation: generate samples
 # generate sd within
