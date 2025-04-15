@@ -91,7 +91,7 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
   library(dplyr)
   library(Rcpp)
   library(RcppArmadillo)
-  sourceCpp("code/blade_mfm.cpp")
+  sourceCpp("code/blade.cpp")
   source("code/function.R")
   
   # load distance data
@@ -104,7 +104,7 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
   
   # Setting
   Max_iteration <- 2000
-  K_prior <- 20
+  K_init <- 20
   sigma <- 15
   set.seed(0)
   
@@ -115,7 +115,7 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
   lambda_est <- dij_R_max - dij_R_min
   lambda <- lambda_est * 1.01
   
-  K <- K_prior
+  K <- K_init
   theta_init <- sapply(dij_R, mean)
   a1 <- (theta_init - sapply(dij_R, min)) / lambda
   b1 <- 1- (sapply(dij_R, max) - theta_init) /lambda
@@ -132,8 +132,7 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
   
   # BLADE
   result <- runMCMC(z_init-1, alpha_init, beta_init, theta_init, mu_init, Sigma_init,
-                    lambda=lambda, dij_R, G = matrix(0, n, 4), f=0,
-                    tau=0.1,  mu0=0, alpha = alpha, beta = beta, K_prior = K,
+                    lambda=lambda, dij_R, tau=0.1, mu0=0, alpha = alpha, beta = beta, 
                       max_iters = Max_iteration, seed = 1)
   
   # Posterior Inference: PPM 
