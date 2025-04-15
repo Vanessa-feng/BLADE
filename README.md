@@ -64,7 +64,6 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
 - `tau` (numerical scalar): Precision parameter for the prior on layer-specific means.
 - `alpha` (numerical scalar): Shape parameter for the prior on variance.
 - `beta` (numerical scalar): Rate parameter for the prior on variance.
-- `K_prior` (integer): Prior on the maximum number of layers.
 - `GAMMA` (numerical scalar): Concentration parameter for the Dirichlet process (default = 1).
 - `max_iters` (integer): Maximum number of iterations for the MCMC algorithm (default = 100).
 - `seed` (integer): Random seed for reproducibility (default = 12569).
