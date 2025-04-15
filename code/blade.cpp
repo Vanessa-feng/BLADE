@@ -144,24 +144,24 @@ vec VN(const int Kmax, const int N, const double gamma, const double lambda){
 }
 
 
-//function to calculate MRF energy function
-double MRF_energy(const int &k, const int &l, const vec &group_t, const umat &G,
-                  const double f, const bool log_value = true){
+// //function to calculate MRF energy function
+// double MRF_energy(const int &k, const int &l, const vec &group_t, const umat &G,
+//                   const double f, const bool log_value = true){
   
-  uvec G_l = G.row(l).t();
-  uvec neighbor = G_l.elem(find(G_l > 0)) - 1;
+//   uvec G_l = G.row(l).t();
+//   uvec neighbor = G_l.elem(find(G_l > 0)) - 1;
   
-  uvec neighbor_id = find(group_t(neighbor) == k);
-  double result = f * neighbor_id.n_elem;
+//   uvec neighbor_id = find(group_t(neighbor) == k);
+//   double result = f * neighbor_id.n_elem;
   
-  if(log_value){return result;}
-  else{ return exp(result); }
-}
+//   if(log_value){return result;}
+//   else{ return exp(result); }
+// }
 
 
 //function to calculate probability of existing clusters
 double prob_existing(const int k, const int l, const vec group_t, const vec mu_t, const vec Sigma_t,
-                     const double y, const umat G, const double f, const double GAMMA){
+                     const double y, const double GAMMA){
   double result = 0;
   uvec index = find(group_t == k);
   int n_k;
@@ -169,7 +169,7 @@ double prob_existing(const int k, const int l, const vec group_t, const vec mu_t
     n_k = index.n_elem - 1;
   }else{ n_k = index.n_elem;}
   
-  result += log(n_k + GAMMA) + MRF_energy(k, l, group_t, G, f);
+  result += log(n_k + GAMMA);
   
   result += log_normpdf(y, mu_t(k), sqrt(Sigma_t(k)));
   
@@ -196,8 +196,9 @@ double prob_new(const int K, const vec vn, const double y, double mu0,
 
 
 void update_group(vec &group_t, vec &mu_t, vec &Sigma_t, const vec &Y_t, 
-                  const vec &vn, const umat &G, const double &f, const double &GAMMA, const double mu0, 
-                  const double &tau, const double alpha, const double beta, const double &temperature){
+                  const vec &vn, const double &GAMMA, const double mu0, 
+                  const double &tau, const double alpha, const double beta,
+                  const double &temperature){
   
   int Kmax = vn.n_elem - 1;
   int N = Y_t.n_elem;
@@ -214,7 +215,7 @@ void update_group(vec &group_t, vec &mu_t, vec &Sigma_t, const vec &Y_t,
     if(c_size > 1){
       vec prob_i = zeros<vec>(K+1);
       for(int k = 0; k < K; k++){
-        prob_i(k) = prob_existing(k, i, group_t, mu_t, Sigma_t, Y_t(i), G, f, GAMMA);
+        prob_i(k) = prob_existing(k, i, group_t, mu_t, Sigma_t, Y_t(i), GAMMA);
       }
       
       prob_i(K) = prob_new(K, vn, Y_t(i), mu0, tau, alpha, beta, GAMMA);
@@ -264,7 +265,7 @@ void update_group(vec &group_t, vec &mu_t, vec &Sigma_t, const vec &Y_t,
       //The cluster is a singleton, only K choices
       vec prob_i = vec(K+1, fill::zeros);
       for(int k = 0; k < K; k++){
-        prob_i(k) = prob_existing(k, i, group_t, mu_t, Sigma_t, Y_t(i), G, f, GAMMA);
+        prob_i(k) = prob_existing(k, i, group_t, mu_t, Sigma_t, Y_t(i), GAMMA);
       }
       
       prob_i(K) = prob_new(K, vn, Y_t(i), mu0, tau, alpha, beta, GAMMA);
@@ -305,12 +306,12 @@ void update_group(vec &group_t, vec &mu_t, vec &Sigma_t, const vec &Y_t,
 // [[Rcpp::export]]
 Rcpp::List runMCMC(vec &group_t, vec &alpha_t, vec &beta_t, vec &theta_t, 
                    vec &mu_t, vec &Sigma_t, const vec &lambda, const Rcpp::List &X, 
-                   const umat &G, const double &f, const double &tau, const double &mu0, 
-                   const double &alpha, const double &beta, const int &K_prior, const double GAMMA=1,
+                   const double &tau, const double &mu0, const double &alpha, 
+                   const double &beta, const double GAMMA=1,
                    const int max_iters = 100, const int seed = 12569){
   int N = group_t.n_elem;
   int Kmax = 50;
-  vec vn = VN(Kmax + 1, N, GAMMA, K_prior);
+  vec vn = VN(Kmax + 1, N, GAMMA, 1);
   arma_rng::set_seed(seed);
   
   //store the parameters
