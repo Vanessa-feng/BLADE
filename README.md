@@ -20,7 +20,7 @@ The model leverages spatial data of cells relative to a reference curve, capturi
   - **`preprocessing.R`**: Prepares spatial and type information from pathology images and calculates the pixel-to-reference curve distances, serving as input for BLADE.
   - **`function.R`**: Provides basic custom functions used in the analysis.
 
-- **`demo`**: Contains a demo dataset for BayesLASA.
+- **`demo`**: Contains a demo dataset for BLADE.
 
 - **`data`**: Includes datasets used in the manuscript:
   - **`simulated_data`**: Contains scripts for generating simulated datasets along with 10 sample datasets.
