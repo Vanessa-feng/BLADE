@@ -42,7 +42,7 @@ This directory structure and accompanying code provide a comprehensive workflow 
 
 ## Usage
 
-Below, we demonstrate the usage of BLADE for infering the number of layers on the OPMD-EPOC dataset. The core layer detection functionality is performed by the `runMCMC` function in `code/blade_mfm.cpp`.
+Below, we demonstrate the usage of BLADE for inferring the number of layers on the OPMD-EPOC dataset. The core layer detection functionality is performed by the `runMCMC` function in `code/blade_mfm.cpp`.
 
 ### Purpose
 
@@ -56,10 +56,8 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
 - `theta_init` (numerical vector): Initial mean shortest distance  for each cell.
 - `mu_init` (numerical vector): Initial layer-specific mean parameters.
 - `Sigma_init` (numerical vector): Initial layer-specific variance parameters.
-- `lambda` (numerical vector): Size parameters , corresponding to the length of each cell along the axis orthogonal to the tangent of the reference curve.
+- `lambda` (numerical vector): Size parameters, corresponding to the length of each cell along the axis orthogonal to the tangent of the reference curve.
 - `distance` (list): Precomputed shortest distances between cell pixels and reference curve points.
-- `G` (matrix): Boolean adjacency matrix (default is a zero matrix of dimension ).
-- `f` (numerical scalar): Hyperparameter controlling the prior (default = 0).
 - `mu0` (numerical scalar): Prior mean for layer-specific means.
 - `tau` (numerical scalar): Precision parameter for the prior on layer-specific means.
 - `alpha` (numerical scalar): Shape parameter for the prior on variance.
@@ -82,7 +80,7 @@ The `runMCMC` function implements the Bayesian Layer Detection framework using M
 
   ### Case study
 
-  For our case study, we utilized real oral cancer pathology imaging data from the **Erlotinib Prevention of Oral Cancer (EPOC)** trial conducted at the **University of Texas MD Anderson Cancer Center**. This dataset includes a cohort of 136 patients along with their corresponding histology slides. All imaging data are annotated with spatial cell pattern information, where each cell is represented by multiple pixels. Here, we demonstrate the **BLADE** approach using a sample image that has been preprocessed in advance to extract distance measurements.
+In the case study, we utilized real oral cancer pathology imaging data from the **Erlotinib Prevention of Oral Cancer (EPOC)** trial conducted at the **University of Texas MD Anderson Cancer Center**. This dataset includes a cohort of 136 patients along with their corresponding histology slides. All imaging data are annotated with spatial cell pattern information, where each cell is represented by multiple pixels. Here, we demonstrate the **BLADE** approach using a sample image preprocessed in advance to extract distance measurements.
 
   ```R
   setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
