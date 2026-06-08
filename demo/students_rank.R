@@ -1,10 +1,7 @@
-setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
+source("code/setup.R")
+load_required_packages(c("dplyr", "Rcpp", "RcppArmadillo", "mcclust"))
 
-library(dplyr)
-library(Rcpp)
-library(RcppArmadillo)
-
-sourceCpp("code/blade_mfm_modified.cpp")
+sourceCpp("code/blade_modified.cpp")
 source("code/function.R")
 
 # load students_rank

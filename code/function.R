@@ -1,3 +1,21 @@
+required_packages <- c("RColorBrewer", "ggplot2", "truncnorm", "clue")
+local_library <- file.path(getwd(), ".Rlib")
+if (dir.exists(local_library)) {
+  .libPaths(c(local_library, .libPaths()))
+}
+
+missing_packages <- required_packages[
+  !vapply(required_packages, requireNamespace, logical(1), quietly = TRUE)
+]
+if (length(missing_packages) > 0) {
+  stop(
+    "Missing R package(s): ",
+    paste(missing_packages, collapse = ", "),
+    ". Install them before sourcing code/function.R.",
+    call. = FALSE
+  )
+}
+
 library(RColorBrewer)
 library(ggplot2)
 

@@ -1,11 +1,7 @@
-setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
-
+source("code/setup.R")
 source("code/function.R")
 
-library(imager)
-library(cluster)
-library(mclust)
-library(dbscan)
+load_required_packages(c("imager", "cluster", "mclust", "dbscan"))
 
 Max_iteration <- 2000
 Burnin <- Max_iteration/2
@@ -20,8 +16,7 @@ img_file_path <- paste0(directory_patches, "EPOC premalignant trial-imaging AI s
 ref_file_path <- paste0(directory_ref, "EPOC premalignant trial-imaging AI study-", file, ".png")
 
 if (!file.exists(img_file_path) || !file.exists(ref_file_path)) {
-  cat("File does not exist, skipping:", file, "\n")
-  next
+  stop("Image patch or reference curve does not exist for file: ", file)
 }
 
 # nuclei img
@@ -32,12 +27,10 @@ height <- dim(img_data)[2]
 components_file <- paste0(directory_patches, file, ".csv")
 ref_file <- paste0(directory_ref, file, ".csv")
 if (!file.exists(components_file)) {
-  cat("File components does not exist, skipping:", file, "\n")
-  next
+  stop("Components file does not exist for file: ", file)
 }
 if (!file.exists(ref_file)) {
-  cat("File ref does not exist, skipping:", file, "\n")
-  next
+  stop("Reference file does not exist for file: ", file)
 }
 
 ref_points <- read.csv(ref_file)
@@ -198,4 +191,3 @@ p_dbscan <-  plot.label(label=as.factor(components$label[which(components$label!
                   boundary=ref_points[ref_points$boundary_id==R,], width=width, height=height,
                   color_palette=my_colors)
 print(p_dbscan)
-

@@ -1,9 +1,7 @@
-setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
+source("code/setup.R")
+load_required_packages(c("dplyr", "Rcpp", "RcppArmadillo", "mcclust"))
 
-library(dplyr)
-library(Rcpp)
-library(RcppArmadillo)
-sourceCpp("code/blade_mfm.cpp")
+sourceCpp("code/blade.cpp")
 source("code/function.R")
 
 # ------------------------------------------
@@ -55,7 +53,7 @@ beta <- sigma^2*(alpha-1)
 start.time <- Sys.time()
 result = runMCMC(z_init-1, alpha_init, beta_init, theta_init, mu_init, Sigma_init,
                  lambda=lambda, dij_sample, G = matrix(0, n, 4), f=0,
-                 tau=0.1,  mu0=0, alpha = alpha, beta = beta, K_prior=K,
+                 tau=0.1,  mu0=0, alpha = alpha, beta = beta,
                  max_iters = Max_iteration, seed = 1)
 end.time <- Sys.time()
 blade_time <- round(as.numeric(difftime(end.time, start.time, units = "secs")), 3)

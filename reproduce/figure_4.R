@@ -1,9 +1,5 @@
-setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
-
-library(dplyr)
-library(reshape2)
-library(ggpubr)
-library(gridExtra)
+source("code/setup.R")
+load_required_packages(c("dplyr", "reshape2", "ggpubr", "gridExtra"))
 
 # Load the results of 200 simulations for 6 different methods
 output_df <- read.csv(file = paste0(getwd(), "/results/simulation_output/simulation_comparison.csv"))
@@ -138,4 +134,3 @@ p_comparison1 <- grid.arrange(p_ari, p_cor, p_diff, nrow=1)
 print(p_comparison1)
 
 # ggsave(filename="results/simulation_output/simu_comparison1.png", p_comparison1, width=2800, height=1400, units = "px")
-

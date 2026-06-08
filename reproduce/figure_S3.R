@@ -1,9 +1,7 @@
-setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
-
 # randomly sample scenario -> simulated oral sample images
 
-library(ggplot2)
-library(gridExtra)
+source("code/setup.R")
+load_required_packages(c("ggplot2", "gridExtra"))
 
 output_df <- read.csv(file = "results/simulation_output/simulation_comparison.csv")
 
@@ -25,7 +23,7 @@ create_layer_plot <- function(predicted, method_name) {
       plot.title = element_text(size = 14, face = "bold", hjust = 0.5),
       axis.title = element_text(size = 12)
     ) +
-    annotate("text", x = 30, y = 40, label = paste0("\u03C1 = ", round(correlation, 2)),
+    annotate("text", x = 30, y = 40, label = paste0("rho = ", round(correlation, 2)),
              color = "blue", size = 4, hjust = 1)
 }
 

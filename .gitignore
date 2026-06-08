@@ -1,0 +1,9 @@
+.DS_Store
+.Rhistory
+.Rapp.history
+.RData
+.Rlib/
+*.o
+*.so
+*.dll
+*.dylib

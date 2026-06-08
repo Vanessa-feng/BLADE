@@ -1,9 +1,5 @@
-library(readxl)
-library(dplyr)
-library(ggplot2)
-library(survival)
-library(survminer)
-library(reshape2)
+source("code/setup.R")
+load_required_packages(c("readxl", "dplyr", "ggplot2", "survival", "survminer", "reshape2"))
 
 clinic_data <- read.csv("data/epoc_pathology_image_data/epoc_clinic.csv", header=T)
 

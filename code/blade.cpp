@@ -306,7 +306,8 @@ void update_group(vec &group_t, vec &mu_t, vec &Sigma_t, const vec &Y_t,
 // [[Rcpp::export]]
 Rcpp::List runMCMC(vec &group_t, vec &alpha_t, vec &beta_t, vec &theta_t, 
                    vec &mu_t, vec &Sigma_t, const vec &lambda, const Rcpp::List &X, 
-                   const double &tau, const double &mu0, const double &alpha, 
+                   const umat &G, const double &f,
+                   const double &tau, const double &mu0, const double &alpha,
                    const double &beta, const double GAMMA=1,
                    const int max_iters = 100, const int seed = 12569){
   int N = group_t.n_elem;
@@ -352,7 +353,7 @@ Rcpp::List runMCMC(vec &group_t, vec &alpha_t, vec &beta_t, vec &theta_t,
     Sigma_t = update_sigma(Sigma_t, group_t, theta_t, mu_t, tau, alpha, beta);
     
     
-    update_group(group_t, mu_t, Sigma_t, theta_t, vn, G, f, GAMMA, mu0, 
+    update_group(group_t, mu_t, Sigma_t, theta_t, vn, GAMMA, mu0,
                  tau, alpha, beta, temperature);
     //cout <<  t << "\t";
     
@@ -375,8 +376,6 @@ Rcpp::List runMCMC(vec &group_t, vec &alpha_t, vec &beta_t, vec &theta_t,
                       Named("mu_iter") = mu_iter, 
                       Named("Sigma_iter") = Sigma_iter);
 }
-
-
 
 
 

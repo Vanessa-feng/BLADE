@@ -1,12 +1,10 @@
-setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
-
+source("code/setup.R")
 source("code/function.R")
 
-library(imager)
-library(dplyr)
-library(ggplot2)
+load_required_packages(c("imager", "dplyr", "ggplot2"))
 
 file <- 1
+ref_id <- 1
 Max_iteration <- 2000
 Burnin <- Max_iteration/2
 
@@ -14,8 +12,7 @@ directory_patches <- "data/nodule_data/"
 img_file_path <- paste0(directory_patches, "nodule0", file, ".png")
 
 if (!file.exists(img_file_path)) {
-  cat("File does not exist, skipping:", file, "\n")
-  next
+  stop("Nodule image does not exist for file: ", file)
 }
 
 # nuclei img
@@ -58,11 +55,11 @@ for(i in 1:n){
 
 # draw uncertainty plot and clustering results
 cluster_plot <- plot.label(label=as.factor(components$label), loc=components[,c("x","y")], 
-                           boundary=ref_points[ref_points$boundary_id==R,], width=width, height=height,
+                           boundary=ref_points[ref_points$boundary_id==ref_id,], width=width, height=height,
                            color_palette=my_colors)
 
 uncertainty_plot <- plot.preci(label=1-components$precision, loc=components[,c("x","y")], 
-                               boundary=ref_points[ref_points$boundary_id==R,])
+                               boundary=ref_points[ref_points$boundary_id==ref_id,])
 
 print(cluster_plot)
 print(uncertainty_plot)

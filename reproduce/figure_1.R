@@ -1,7 +1,5 @@
-setwd("C:/Xin/oral_cancer/Code_Xin/BLADE_git")
-
-library(imager)
-library(dplyr)
+source("code/setup.R")
+load_required_packages(c("imager", "dplyr"))
 source("code/function.R")
 
 # components and reference curve
@@ -40,8 +38,7 @@ load(paste0(getwd(), "/results/epoc_pathology_image_output/result_", file , ".RD
 df_output <- read.csv(paste0(getwd(), "/results/epoc_pathology_image_output/epoc_output.csv"))
 fill_index <- which(df_output$file == file)
 if(is.na(df_output[fill_index, "select_ref_id"])){
-  cat("select_ref_id=None.\n")
-  next
+  stop("select_ref_id is missing for file: ", file)
 }
 R <- df_output[fill_index, "select_ref_id"]
 dij_R <- lapply(dij, function(df) df[, R])
@@ -110,4 +107,3 @@ print(p_colorcoded)
 
 # ggsave(filename=paste0(getwd(), "/results/epoc_pathology_image_output/colorcoded_", file , ".png"), p_colorcoded,
 #        width=2200, height=1500, units = "px")
-
